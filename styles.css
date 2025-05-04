@@ -1,0 +1,1270 @@
+@font-face {
+    font-family: 'Catamaran';
+    src: url("/fonts/Catamaran-SemiBold.woff2") format('woff2');
+    font-weight: 600;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    position: relative;
+}
+
+:root {
+    --color-background: rgba(46, 49, 146, 1);
+    --color-blue: rgba(30, 45, 120, 1);
+    --color-light: white;
+    --color-gray: rgba(138, 138, 138, 1);
+    --color-light-red: rgba(221, 51, 51, 1);
+    --button-border-radius: 5px;
+
+}
+
+.top-area {
+    height: 2.5rem;
+    width: auto;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21.67px;
+    color: var(--color-light)
+}
+
+.time-info {
+    padding-block: 0.667em;
+    padding-left: 6.07em;
+}
+
+.contacts {
+    display: flex;
+    column-gap: 5rem;
+    margin-right: 40px;
+    align-items: center;
+}
+
+.contact {
+    padding-block: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.number::before {
+    content: url('/icons/number.svg');
+    width: 17px;
+    height: 17px;
+    margin-right: 15px;
+}
+
+.email::before {
+    content: '.';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-right: 15px;
+}
+
+.address::before {
+    content: url('/icons/address.svg');
+    width: 17px;
+    height: 17px;
+    margin-right: 15px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding-inline: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--color-blue);
+    letter-spacing: 0.1625rem;
+    text-transform: uppercase;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+    width: 135px;
+    height: 17px;
+    margin-right: 0;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    column-gap: 5.385em;
+    align-items: center;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+
+.menu-item {
+    padding: 0;
+}
+
+.menu-link {
+    text-decoration: none;
+    line-height: 0.77em;
+}
+
+.menu-link:hover {
+    color: blue;
+}
+
+.is-current {
+    text-decoration: underline 2px solid rgba(244, 87, 46, 1);
+}
+
+.menu-right {
+    display: flex;
+    column-gap: 1.923em;
+    align-items: center;
+}
+
+.menu-right-link {
+    line-height: 4.54em;
+    text-decoration: none;
+}
+
+.menu-right-link:hover {
+    color: blue;
+}
+
+.burger-button {
+    width: 49px;
+    height: 49px;
+    border: none;
+    border-radius: var(--button-border-radius);
+    box-sizing: border-box;
+    background-color: rgba(253, 234, 234, 1);
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.burger-button:hover {
+    background-color: rgb(226, 225, 225);
+}
+
+.banner {
+    background-image: url('/images/banner.png');
+    height: 650px;
+    position: relative;
+    width: auto;
+}
+
+.banner-arrow {
+    width: 51px;
+    height: 55px;
+    border: none;
+    background-color: var(--color-light);
+    border-radius: 4px;
+    position: absolute;
+    box-sizing: border-box;
+    padding-top: 4px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.left-arrow {
+    top: 298px;
+    left: 40px;
+}
+
+.banner-arrow:hover {
+    background-color: rgb(233, 232, 232);
+}
+
+.right-arrow {
+    top: 298px;
+    right: 40px;
+}
+
+.banner-top-button {
+    background-color: rgba(244, 87, 46, 1);
+    color: var(--color-light);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4375rem;
+    letter-spacing: 0.125rem;
+    width: 10.5rem;
+    height: 1.8125rem;
+    margin-top: 11.6875rem;
+    margin-left: 19.375rem;
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.banner-top-button:hover {
+    background-color: rgb(244, 119, 46);
+}
+
+.banner-text {
+    font-family: 'Catamaran';
+    font-weight: 600;
+    font-size: 4.0625rem;
+    line-height: 1.18em;
+    color: var(--color-blue);
+    letter-spacing: 0px;
+    margin-top: 0.875rem;
+    margin-left: 19.25rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625rem;
+}
+
+.string {
+    background-color: var(--color-light);
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.banner-buttons {
+    display: flex;
+    column-gap: 15px;
+    width: max-content;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.15rem;
+    margin-left: 19.5rem;
+    margin-top: 2rem;
+}
+
+.banner-button {
+    width: 187px;
+    height: 56px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: var(--button-border-radius);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.banner-button-left {
+    background-color: var(--color-background);
+    color: var(--color-light);
+    transition-duration: 0.3s;
+}
+
+.banner-button-left:hover {
+    border: 1px solid var(--color-light);
+}
+
+.banner-button-right {
+    background-color: var(--color-light);
+    color: var(--color-background);
+    transition-duration: 0.3s;
+}
+
+.banner-button-right:hover {
+    border: 1px solid var(--color-blue);
+}
+
+.main {
+    padding: 0;
+    margin: 0;
+}
+
+.section-header {
+    font-family: 'Catamaran';
+    font-weight: 600;
+    color: var(--color-blue);
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.info-cards-container {
+    display: flex;
+    gap: 20px;
+    margin-block: 100px;
+    justify-content: center;
+}
+
+.info-card {
+    width: 414px;
+    height: 557px;
+    box-sizing: border-box;
+}
+
+.info-card-image {
+    width: 414px;
+    height: 255px;
+    margin-bottom: 25px;
+}
+
+.info-card-header {
+    font-size: 27px;
+    line-height: 34.99px;
+}
+
+.section-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0;
+    color: var(--color-gray);
+    line-height: 1.666666666666;
+}
+
+.info-card-text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.info-card-button {
+    border: none;
+    width: max-content;
+    height: max-content;
+    background-color: var(--color-light);
+    margin-block: 30px;
+    color: var(--color-blue);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    column-gap: 9px;
+    align-items: center;
+}
+
+.advantage {
+    margin-top: 0;
+}
+
+.advantage::before {
+    content: url('images/advantage.png');
+    width: 30px;
+    height: 11px;
+}
+
+.working-hours-card {
+    background-image: url('images/background-card.jpg');
+}
+
+.working-hours-card-header {
+    font-size: 35px;
+    line-height: 25px;
+    margin-top: 48px;
+    text-align: center;
+}
+
+.card-day-time {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 39px;
+    align-items: center;
+    height: max-content;
+}
+
+.line {
+    margin-top: 8px;
+    display: block;
+    z-index: 1;
+}
+
+.card-contact {
+    font-family: 'Catamaran';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: var(--color-light);
+    text-align: center;
+    margin-top: 80px;
+}
+
+.day-time-text {
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: rgba(101, 101, 101, 1);
+}
+
+.chat-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 1vw;
+    width: 107px;
+    height: 50px;
+    border-radius: 13986px;
+    column-gap: 8px;
+    background-color: rgba(238, 40, 82, 1);
+    font-family: 'Segoe UI', Tahoma;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.chat-button:hover {
+    background-color: rgb(224, 7, 54);
+}
+
+.advantages-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    column-gap: 28px;
+    row-gap: 75px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.advantage-block {
+    display: flex;
+    column-gap: 28px;
+    height: 94px;
+}
+
+.first-advantage-block {
+    height: 96px;
+}
+
+.advantage-text-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.advantage-header {
+    font-size: 19px;
+    line-height: 25px;
+    margin-top: 3px;
+}
+
+.advantage-block-text {
+    margin: 0;
+    padding: 0;
+}
+
+.advertisement-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.advertisement-text-block {
+    width: 47%;
+    aspect-ratio: 1.27867992972;
+    background-color: rgba(238, 247, 255, 1);
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.red-header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 1.69px;
+    color: var(--color-light-red);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.advertisement-top-header {
+    margin-left: 20.9423503326%;
+}
+
+.advertisement-header {
+    font-size: 42px;
+    line-height: 47px;
+    margin-left: 20.9423503326%;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+
+.advertisement-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0;
+    color: rgba(101, 101, 101, 1);
+    margin-top: 12px;
+    margin-left: 20.9423503326%;
+    margin-bottom: 0;
+    width: 57.3170731707%;
+}
+
+.author-name {
+    font-family: 'Catamaran';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33.34px;
+    letter-spacing: 0;
+    color: var(--color-light-red);
+    margin-top: 26px;
+    margin-left: 20.9423503326%;
+}
+
+.advertisement-image {
+    width: 53%;
+    aspect-ratio: 1.44191747435;
+}
+
+.signature {
+    width: 59.0288248337%;
+    aspect-ratio: 4.75860219859;
+    position: absolute;
+    top: 67.4544159544%;
+    left: 20.9423503326%;
+}
+
+.feedback-top-header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.feedback-header {
+    text-align: center;
+    font-size: 52px;
+    line-height: 1.154;
+}
+
+.center-section-text {
+    text-align: center;
+    font-size: 19px;
+    line-height: 30px;
+    margin-block: 0;
+    margin-inline: 120px;
+}
+
+.client-feedbacks-container {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    column-gap: 4.16666666667vw;
+    padding: 0;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.client-feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(380vw / 1920 * 100);
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.client-image-container {
+    width: 7.29166666667vw;
+    margin-top: 83px;
+    position: relative;
+}
+
+.client-image {
+    width: 100%;
+    aspect-ratio: 1;
+    margin: 0;  
+}
+
+.client-image-container-bage {
+    width: 25%;
+    aspect-ratio: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.client-feedback-header {
+    font-size: 27px;
+    line-height: calc(34.99 / 27);
+    margin-top: 1em;
+    text-align: center;
+}
+
+.client-feedback-text {
+    margin-left: 5.72px;
+    text-align: center;
+    margin-bottom: 0;
+    width: 80%;
+}
+
+.client-feedback-red-header {
+    margin-top: 28px;
+}
+
+.feedback-arrow-button {
+    position: absolute;
+    top: 245px;
+    border: none;
+    background-color: white;
+    border-radius: var(--button-border-radius);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 7px 10px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.feedback-arrow-button:hover {
+    background-color: rgb(233, 232, 232);
+}
+
+.left-feedback-arrow-button{
+    left: 7.8125%;
+}
+
+.right-feedback-arrow-button {
+    right: 7.8125%;
+}
+
+@media screen and (max-width: 1574px) {
+    .info-cards-container {
+        gap: 30px;
+    }
+    
+    .info-card {
+        width: 270px;
+        height: 557px;
+        box-sizing: border-box;
+    }
+    
+    .info-card-image {
+        width: 270px;
+        height: 166px;
+        margin-bottom: 18px;
+    }
+    
+    .info-card-header {
+        font-family: 'Catamaran';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34.99px;
+        letter-spacing: 0;
+        color: var(--color-blue);
+        margin: 0;
+    }
+    
+    .info-card-text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0;
+        margin-top: 15px;
+        padding: 0;
+        color: var(--color-gray);
+    }
+    
+    .info-card-button {
+        border: none;
+        width: max-content;
+        height: max-content;
+        background-color: var(--color-light);
+        margin-block: 20px;
+        color: var(--color-blue);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        padding: 0;
+        cursor: pointer;
+        display: flex;
+        column-gap: 9px;
+        align-items: center;
+    }
+    
+    .advantage {
+        margin-top: 0;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .info-card {
+        height: 450px;
+        box-sizing: border-box;
+    }
+
+    .card-contact {
+        background-color: rgb(15, 15, 146);
+        padding-block: 25px;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+
+    .working-hours-card-header {
+        font-size: 28px;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+
+    .day-time-text {
+        margin-bottom: 0;
+    }
+
+    .advantages-container {
+        grid-template-columns: 280px 280px 280px;
+    }
+
+    .advantage-block {
+        column-gap: 16px;
+    }
+
+    .advantage-header {
+        font-size: 16px;
+    }
+
+    .advantage-block-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1446px) {
+    .advertisement-header {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .feedback-header {
+        font-size: 36px;
+    }
+
+    .advertisement-text {
+        font-size: 13px;
+    }
+
+    .center-section-text {
+        font-size: 16px;
+    }
+
+    .client-feedback-header {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 1216px) {
+    .banner-text {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .top-area {
+        font-size: 11px;
+    }
+
+    .navigation {
+        font-size: 11px;
+    }
+
+    .menu-list {
+        column-gap: 4em;
+    }
+    
+    .chat-button {
+        top: -70px;
+        right: 1vw;
+    }
+
+    .signature {
+        top: 74%
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .banner-text {
+        margin-left: 19vw;
+    }
+
+    .banner-top-button {
+        margin-left: 19.1vw;
+    }
+
+    .banner-buttons {
+        margin-left: 19.3vw;
+    }
+
+    .advertisement-top-header {
+        margin-left: 15%;
+    }
+
+    .feedback-top-header {
+        margin: 0;
+    }
+
+    .advertisement-header {
+        margin-left: 15%;
+    }
+
+    .advertisement-text {
+        margin-left: 15%;
+        width: 70.3170731707%;
+    }
+
+    .author-name {
+        margin-left: 15%;
+    }
+
+    .signature {
+        left: 15%;
+    }
+
+    .client-feedback-text {
+        font-size: 14px;
+    }
+
+    .client-feedback-header {
+        font-size: 18px;
+    }
+
+    .client-feedback-red-header {
+        font-size: 10px;
+    }
+
+    .client-image-container {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    .secondary {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex; 
+        justify-content: space-between; 
+    }
+
+    .email {
+        display: none;
+    }
+
+    .logo {
+        width: 120px;
+        height: 15.11px;
+    }
+
+    .navigation {
+        height: 80px;
+    }
+
+    .working-hours-card {
+        display: none;
+    }
+
+    .advantages-container {
+        grid-template-columns: 280px 280px;
+    }
+
+    .advertisement-text {
+        margin-left: 10%;
+        width: 76.3170731707%;
+        margin-top: 4px;
+    }
+
+    .advertisement-top-header {
+        margin-left: 10%;
+    }
+
+    .advertisement-header {
+        margin-left: 10%;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .feedback-header {
+        font-size: 30px;
+    }
+
+    .author-name {
+        margin-left: 10%;
+        font-size: 17px;
+        margin-top: 6px;
+    }
+
+    .signature {
+        left: 10%;
+    }
+
+    .client-feedback-header {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 856px) {
+    .advertisement-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .advertisement-text-block {
+        width: 100%;
+        aspect-ratio: 2;
+    }
+
+    .advertisement-image {
+        display: none;
+    }
+
+    .signature {
+        top: 68%
+    }
+
+    .client-feedbacks-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .client-feedback {
+        width: 300px;
+    }
+
+    .feedback-arrow-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .banner {
+        height: 450px;
+    }
+
+    .banner-text {
+        font-size: 3rem;
+    }
+
+    .banner-top-button {
+        margin-top: 5.6875rem;
+    }
+
+    .left-arrow {
+        top: 180px;
+    }
+
+    .right-arrow {
+        top: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        height: 64px;
+    }
+
+    .top-area {
+        height: 34px;
+    }
+   
+    .info-cards-container {
+        gap: 7vw;
+    }
+    
+    .info-card {
+        width: 180px;
+        height: 557px;
+        box-sizing: border-box;
+    }
+    
+    .info-card-image {
+        width: 180px;
+        height: 110px;
+        margin-bottom: 15px;
+    }
+    
+    .info-card-header {
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 24px;
+    }
+    
+    .info-card-text {
+        font-size: 13px;
+        margin: 0;
+    }
+    
+    .info-card-button {
+        margin-top: 30px;
+        font-size: 12px;
+        column-gap: 9px;
+        align-items: center;
+    }
+    
+    .advantage {
+        margin-top: 0;
+    }
+
+    .info-card {
+        height: 450px;
+        box-sizing: border-box;
+    }
+
+    .advantage-block-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 746px) {
+    .number {
+        display: none;
+    }
+
+    .burger-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo {
+        width: 105px;
+        height: 13.22px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .banner-text {
+        font-size: 2rem;
+        margin-left: 170px;
+    }
+
+    .banner-top-button {
+        margin-top: 3.15rem;
+        margin-left: 172px;
+    }
+
+    .banner-buttons {
+        margin-top: 1.5rem;
+        margin-left: 172px;
+    }
+
+    .banner-button {
+        width: 130px;
+        height: 39px;
+        font-size: 0.6rem;
+    }
+
+    .left-arrow {
+        top: 120px;
+    }
+
+    .right-arrow {
+        top: 120px;
+    }
+
+    .advantages-container {
+        grid-template-columns: 280px;
+    }
+}
+
+@media screen and (max-width: 636px) {
+    .navigation {
+        font-size: 10px;
+        column-gap: 3em;
+    }
+
+    .logo {
+        width: 80px; 
+        height: 10.04px
+    }
+
+    .time-info {
+        display: none;
+    }
+
+    .top-area {
+        justify-content: center;
+    }
+
+    .left-arrow {
+        display: none;
+    }
+
+    .right-arrow {
+        display: none;
+    }
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-text {
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .banner-top-button {
+        margin-top: 3.15rem;
+        margin-left: 0;
+        margin-right: 135px;
+    }
+
+    .banner-buttons {
+        margin-top: 1.5rem;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .advertisement-text-block {
+        aspect-ratio: auto;
+        height: auto;
+        padding-block: 30px;
+    }
+
+    .center-section-text {
+        margin-inline: 70px;
+    }
+}
+
+@media screen and (max-width: 536px) {
+    .menu-list .menu-item:first-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .pages {
+        display: none;
+    }
+
+    .info-cards-container {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 35px;
+        margin-block: 50px;
+        justify-content: center;
+    }
+
+    .chat-button {
+        width: 81px;
+        height: 38px;
+        column-gap: 5px;
+        top: -44px
+    }
+
+    .advantage-image {
+        width: 66px;
+        height: 63px;
+    }
+
+    .advantage-text-content {
+        justify-content: flex-start;
+    }
+
+    .advantage-header {
+        margin-bottom: -5px;
+    }
+
+    .advantage-block {
+        height: 70px;
+    }
+
+    .advertisement-header {
+        font-size: 20px;
+    }
+
+    .feedback-header {
+        font-size: 24px;
+    }
+
+    .signature {
+        top: 74%;
+        width: 250px;
+    }
+
+    .center-section-text {
+        font-size: 15px;
+        margin-inline: 40px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .navigation {
+        padding-inline: 30px;
+    }
+
+    .banner-text {
+        font-size: 1.4rem;
+    }
+
+    .banner-buttons {
+        margin-left: 14px;
+    }
+
+    .banner-button {
+        width: 96px;
+        height: 27px;
+    }
+
+    .banner-top-button {
+        margin-top: 1.75rem;
+        margin-left: 42px;
+        font-size: 0.5rem;
+        width: 126px;
+        height: 22px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 358px) {
+    .menu-list {
+        display: none;
+        padding-inline: 70px;
+    }
+
+    .advantages-container {
+        grid-template-columns: 240px;
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    .menu-right-link {
+        display: none;
+    }
+}
